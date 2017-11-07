@@ -68,24 +68,4 @@ a <- function(n, p) {
     
 }
 a(3,3)
-<<<<<<< HEAD
-=======
 
-library(dplyr)
-my.result <- melt(data, id=c("title", 'age'), measure='rating')
-View(my.result)
-
-meanRatingsMovies <- aggregate(my.result[, 'value'], list(my.result $movie_id), mean)
-View(meanRatingsMovies)
-
-x <- aggregate(rating ~ age, data, mean)
-head(x)
-
-x <- cast(my.result, title ~ value, value.var="value", fun.aggregate=mean)
-
-library(rpivotTable)
-
-data(mtcars)
-x <- rpivotTable(data, rows="title", cols=c("age"),width="100%", height="400px")
-View(x)
->>>>>>> eada7a40d031b9a53b5d13df90a11cd1b1a54d02
